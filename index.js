@@ -1,7 +1,6 @@
 // console.log("Welcome to team Generator!")
 const inquirer = require('inquirer');
 const fs = require("fs");
-// const generateMarkdown = require('./dist/generateHTML.js');
 
 const Employee = require("./lib/Employee.js");
 const Engineer = require("./lib/Engineer.js");
@@ -131,11 +130,9 @@ userPrompts()
 
 const writeFile = teamResults => {
     fs.writeFile('./dist/index.html', teamResults, err => {
-        // if there is an error 
         if (err) {
             console.log(err);
             return;
-        // when the profile has been created 
         } else {
             console.log("Your team profile has been successfully created! Please check out the index.html")
         }
