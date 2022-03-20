@@ -4,10 +4,10 @@ function generateHTML(data) {
   const cards = [];
 
 
-
+// Get Roles by using Cards to push it out
       for (let i = 0; i < data.length; i++) {
         const role = data[i].getRole(); 
-
+//Switch case for the different roles to assign different functionalities
         switch (role){
           case "Manager":
             cards.push(`<div class="col-12 col-sm-6 col-lg-4 mb-3">
@@ -129,8 +129,7 @@ function generateHTML(data) {
 
   </html>
   `
-  //map data to return string of cards
-
+//returns the template to HTML
 
 
 

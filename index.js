@@ -1,14 +1,17 @@
 // console.log("Welcome to team Generator!")
 const inquirer = require('inquirer');
 const fs = require("fs");
-
+// Requiring all relevant files to be used
 const Employee = require("./lib/Employee.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
 const Manager = require("./lib/Manager.js");
 const generateHTML = require("./dist/generateHTML.js");
+
+//Blank array to be added to teams
 const teamResults = [];
 
+//Start of prompts using Inquirer
 const userPrompts = () => {
     inquirer
         .prompt([
@@ -105,8 +108,7 @@ const userPrompts = () => {
 
 
 }
-
-
+//adding additional employees
 const addEmployee = () => {
     return inquirer.prompt([
         {
@@ -139,7 +141,7 @@ const writeFile = teamResults => {
             console.log(err);
             return;
         } else {
-            console.log("Your team profile has been successfully created! Please check out the index.html")
+            console.log("Congratulations! It has been created. Go to the dist/index.html for the final results!")
         }
     })
 }; 

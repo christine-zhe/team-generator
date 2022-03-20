@@ -1,4 +1,9 @@
-# team-generator
+# Team Generator
+
+## Description
+Below shows the requirements of this challenge. Make sure to start it properly. This program uses inquirer and Jest.
+
+````
 
 GIVEN a command-line application that accepts user input
 
@@ -25,3 +30,13 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
+````
+## Links
+### Team-Generator Link
+https://github.com/christine-zhe/team-generator
+
+### Sample HTML File Generated 
+Located in the "./dist/index.html"
+
+### Video Walkthrough
+https://drive.google.com/file/d/14gPOBmncE-Z5uJOrBzkv7Kv6ptgt9sNO/view

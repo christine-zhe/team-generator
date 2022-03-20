@@ -1,10 +1,14 @@
 const Employee = require("../lib/Employee");
 
+// Employee Tests 
+
+
 test("Employee Name", () => {
   const employeeTest = new Employee('Christine');
   expect(employeeTest.name).toBe("Christine");
 });
 
+// Tests for ID functionality
 test("Employee Unique ID", () => {
   const testID = 1;
   const employeeTest = new Employee("Christine", testID);
